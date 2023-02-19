@@ -1,1 +1,109 @@
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url('https://lh3.googleusercontent.com/uy4-RzsSGCT7eXAT2Mlcc1MkYDP-IjwQKUsixbzGPNfU6ivzHPHo4989ZNBVuvkOg-M=w2400');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+   background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+main, nav {
+    max-width: 800px;
+    margin: 0 auto;
+}
+nav {
+    /*float: right; using flexbox instead of float*/
+    display: flex; 
+    background-color: dodgerblue;
+    padding-top: 40px;
+    
+}
+.portfolio, .link {
+    color: white;
+}
+.portfolio {
+    /*my 'logo' on the left*/
+    margin-right: auto;
+}
 
+.link{
+    /*space between words*/
+    margin-left: auto;
+    margin: 0 4px;
+}
+/*wrap around element*/
+img{
+    float: left;
+    
+}
+div img{
+    padding-right: 15px;
+}
+/*side bar. I'm having a lot of trouble making it a square that floats on the right side of the screen. Everything I'm trying doesn't seem to work.*/
+h5{
+    color: white;
+    font-size: 12pt;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container{
+    background-color: dodgerblue;
+    min-height: 50px;
+    border: 10px beige solid;
+    margin-left: auto;
+    
+}
+aside{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: center;
+    
+}
+.box1{
+    margin-right: auto;
+}
+.socials{
+    display: flex;
+    margin: 0 4px 0;
+    padding-top: 1px;
+    padding-left: 15px;
+    
+}
+
+
+footer, header{
+    text-align: center;
+    margin-top: auto;
+    color: white;
+    background-color: dodgerblue;
+    /*position: absolute; this takes away all my headings at the top. I don't know why*/
+    width: 100%;
+    padding: 24px;
+}
+
+/* elements that are no longer needed due to flexbox. I need to see the difference between what was used with flexbox and float.
+article{
+    float: left; using flexbox instead of float
+    max-width: 600px;
+}
+
+clear fix
+main::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+main aside a {
+    display: block;
+}
+main > aside {
+    /*float: right; using flexbox instead of float*/
+    
+}*/
