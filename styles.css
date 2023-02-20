@@ -1,109 +1,97 @@
-body {
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url('https://lh3.googleusercontent.com/uy4-RzsSGCT7eXAT2Mlcc1MkYDP-IjwQKUsixbzGPNfU6ivzHPHo4989ZNBVuvkOg-M=w2400');
-    min-height: 100vh;
+*{
+   margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background: url('../assets/moroccan-flower (1).png');
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
-main{
-    display: flex;
-   background-color: white;
-    padding-left: 25px;
-    padding-right: 25px;
+/*ah yes, float, I miss how simple you were to use. It's literally the only thing that is working for me right now.*/
+main img{
+    float: left;
+    margin-right: 30px;
 }
-main, nav {
-    max-width: 800px;
+
+.container{
+    max-width: 900px;
     margin: 0 auto;
-}
-nav {
-    /*float: right; using flexbox instead of float*/
-    display: flex; 
-    background-color: dodgerblue;
-    padding-top: 40px;
+    display: flex;
     
 }
-.portfolio, .link {
-    color: white;
-}
-.portfolio {
-    /*my 'logo' on the left*/
-    margin-right: auto;
+/* I have no idea why my nav does not go past the center. I don't know what else to label or edit in the header to make it more OBVIOUS to the program that I want it MARGIN-RIGHT!! So frustrated*/
+nav {
+    display: flex;
+    
 }
 
 .link{
-    /*space between words*/
-    margin-left: auto;
+    margin-right: auto;
     margin: 0 4px;
 }
-/*wrap around element*/
-img{
-    float: left;
-    
-}
-div img{
-    padding-right: 15px;
-}
-/*side bar. I'm having a lot of trouble making it a square that floats on the right side of the screen. Everything I'm trying doesn't seem to work.*/
-h5{
-    color: white;
-    font-size: 12pt;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-.container{
-    background-color: dodgerblue;
-    min-height: 50px;
-    border: 10px beige solid;
+/*I don't know why the header words are stacked on top of each other. The only thing that makes sence to me is inline-block, which I CANT USE RIGHT NOW!!!*/
+.portfolio{
     margin-left: auto;
-    
 }
-aside{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    text-align: center;
-    
-}
-.box1{
+
+.portfolio, .link{
+    color: white;
     margin-right: auto;
 }
-.socials{
-    display: flex;
-    margin: 0 4px 0;
-    padding-top: 1px;
-    padding-left: 15px;
-    
-}
 
-
-footer, header{
-    text-align: center;
-    margin-top: auto;
+header, footer{
+    background: dodgerblue;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
     color: white;
-    background-color: dodgerblue;
-    /*position: absolute; this takes away all my headings at the top. I don't know why*/
-    width: 100%;
-    padding: 24px;
 }
 
-/* elements that are no longer needed due to flexbox. I need to see the difference between what was used with flexbox and float.
-article{
-    float: left; using flexbox instead of float
-    max-width: 600px;
+h1{
+    width: 30%;
+    font-family: sans-serif;
 }
 
-clear fix
-main::after{
-    content: "";
-    clear: both;
-    display: block;
+h2{
+    font-family: sans-serif;
 }
-main aside a {
-    display: block;
+
+main{
+    background-color: white;
+    padding: 15px 15px;
 }
-main > aside {
-    /*float: right; using flexbox instead of float*/
-    
-}*/
+
+aside{
+    display: flex;
+    background-color: white;
+    border: solid black 1px;
+    flex-direction: row;
+}
+
+/*how do I rearange the boxes so the text is up top? No idea, I'm so lost I don't even know what to ask for help on anymore. I feel like I'm marooned on an island in the middle of the ocean and the only way I can ask for help is with a stick in the sand. SOS!*/
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+/*now the words are across the collumn, but the <a> tags are all outside the box!?!?! WHAT???*/
+
+.box{
+    order: -1;
+    flex: 1 0 100%;
+}
+
+a{
+    padding-left: 4px;
+}
+
+footer{
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: auto;
+}
+/*I have followed all the video tutorials and tried to copy them to the best of my ability. If I had a DIME for every time I rewound the tutorial to try and figure out what I'm doing wrong, I'd be RICH! Here's to sipping sparkling water on a beach, happy, content, and no flexbox*/
+/*challenges... challenges... WHERE DO I START?!?!? All of it and EVERYTHING was a challenge. You name it, it's a challenge for me. THE END.*/
